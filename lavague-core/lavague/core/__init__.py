@@ -6,6 +6,7 @@ from lavague.core.extractors import (
 )
 from lavague.core.retrievers import OpsmSplitRetriever
 from lavague.core.world_model import WorldModel
+from lavague.core.value_function import ValueFunction
 from lavague.core.utilities.version_checker import check_latest_version
 from lavague.core.action_engine import ActionEngine
 from lavague.core.agents import WebAgent
