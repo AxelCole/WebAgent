@@ -167,7 +167,7 @@ def extract_next_engine(text: str, next_engines: List[str] = DEFAULT_ENGINES) ->
     next_engine_patterns = [r"Next engine:\s*(.*)", r"### Next Engine:\s*(.*)"]
 
     for pattern in next_engine_patterns:
-        next_engine_match = re.search(pattern, text)
+        next_engine_match = re.search(pattern, text, re.IGNORECASE)
         if next_engine_match:
             extracted_text = next_engine_match.group(1).strip()
             # To avoid returning a non-existent engine
